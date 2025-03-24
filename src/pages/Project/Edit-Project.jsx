@@ -441,11 +441,11 @@ const EditProject = ({ user }) => {
                 >
                   <h4>{innerHotspot.name}</h4>
                   <button
-                    onClick={() =>
-                      setHotspots((hotspots) =>
-                        hotspots.filter((_, i) => i !== hotspots.length - 1)
-                      )
-                    }
+                      onClick={() =>
+                          setHotspots((hotspots) =>
+                              hotspots.filter((_, i) => i !== index)
+                          )
+                      }
                   >
                     <MinusCircleIcon className="w-5 hover:text-red-500" />
                   </button>
